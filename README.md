@@ -10,7 +10,6 @@ A Question-Answering bot for financial news sentiment analysis, using a fine-tun
 
 This project aims to fine-tune a pre-trained LLM to enhance financial sentiment analysis on financial news, both in terms of classification and reasoning analysis. This work develops a Question-Answering (QA) bot capable of providing more precise and context-aware market sentiment analysis.
 
-![Financial Sentiment Analysis](https://api.placeholder.com/850/400)
 
 ## Model Availability
 
