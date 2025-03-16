@@ -20,7 +20,7 @@ base_model = "distilgpt2"
 model = AutoModelForCausalLM.from_pretrained(base_model)
 
 # Load the fine-tuned adapter
-model = PeftModel.from_pretrained(model, "jialeCharlotte/econbot")
+model = PeftModel.from_pretrained(model, "jialeCharlotte/finbot")
 
 # Load tokenizer
 tokenizer = AutoTokenizer.from_pretrained(base_model)
