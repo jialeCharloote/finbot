@@ -12,18 +12,37 @@ The fine-tuned model is hosted on Hugging Face and can be accessed at:
 To use this model in your own applications, you can load it directly:
 
 ```python
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from peft import PeftModel
+from huggingface_hub import login
+import getpass
 
-# Load base model
-base_model = "distilgpt2"
-model = AutoModelForCausalLM.from_pretrained(base_model)
+hugging_token = getpass.getpass("Enter your Hugging Face Token: ")
+login(token=hugging_token)
 
-# Load the fine-tuned adapter
-model = PeftModel.from_pretrained(model, "jialeCharlotte/finbot")
+base_model_name = "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
+lora_model_name = "jialeCharlotte/finbot"
 
 # Load tokenizer
-tokenizer = AutoTokenizer.from_pretrained(base_model)
+tokenizer = AutoTokenizer.from_pretrained(base_model_name,use_fast=True)
+tokenizer.pad_token = tokenizer.eos_token
+tokenizer.pad_token_id = tokenizer.eos_token_id
+
+# Load model
+bnb_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_use_double_quant=True,
+    bnb_4bit_quant_type="fp4",
+    bnb_4bit_compute_dtype=torch.float16
+)
+model = AutoModelForCausalLM.from_pretrained(
+    base_model_name,
+    quantization_config=bnb_config, 
+    torch_dtype=torch.float16,
+    device_map="auto"
+)
+model = PeftModel.from_pretrained(model, lora_model_name)
+model.config.use_cache = False
 ```
 
 ## Repository Structure
