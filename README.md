@@ -7,7 +7,7 @@ This project aims to fine-tune a pre-trained LLM to enhance financial sentiment 
 ## Model Availability
 
 The fine-tuned model is hosted on Hugging Face and can be accessed at:
-https://huggingface.co/jialeCharlotte/econbot
+[https://huggingface.co/jialeCharlotte/finbot](https://huggingface.co/jialeCharlotte/finbot)
 
 To use this model in your own applications, you can load it directly:
 
