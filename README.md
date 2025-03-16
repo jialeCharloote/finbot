@@ -7,7 +7,7 @@ This project aims to fine-tune a pre-trained LLM to enhance financial sentiment 
 ## Model Availability
 
 The fine-tuned model is hosted on Hugging Face and can be accessed at:
-[https://huggingface.co/jialeCharlotte/finbot](https://huggingface.co/jialeCharlotte/finbot)
+[jialeCharlotte/finbot](https://huggingface.co/jialeCharlotte/finbot)
 
 To use this model in your own applications, you can load it directly:
 
@@ -47,22 +47,26 @@ model.config.use_cache = False
 
 ## Repository Structure
 
-- **01Dataset**: Financial news dataset used for training
+- **Dataset**: Financial news dataset used for training
   - `balanced_news.json`: Balanced dataset of financial news
   - `finan_news.json`: Raw financial news data
   - `merged_news.json`: Combined news dataset
   - `preprocess.py`: Script for data preprocessing
   - `stock_tickers.txt`: List of stock tickers used in analysis
 
-- **02Training**: Training scripts and logs
-  - `finetune-log.txt`: Training logs
-  - `finetune.sh`: Training shell script
-  - `finetune.txt`: Training parameters and configuration
-  - `train.py`: Main training script
+- **Training**: Training scripts and logs
+   - `finetuneds.py`: Main training script
+   - `Fine_tuning_training.ipynb`: training on Kaggle
 
-- **04WebDeploy**: Web deployment files
+- **WebDeployment**: Web deployment files
   - `app.py`: Flask application for serving the model
   - `ProjectStructure`: Documentation of project structure
+  - `appdeployment.ipynb`: Web deployment on Kaggle
+
+
+- **Evaluation**: Training scripts and logs
+- `model-eval(1).ipynb`: Model evaluation script on Kaggle
+- `loghistory.csv`: Training logging history
 
 
 ## Methodology
@@ -80,6 +84,12 @@ Fine-tuned a DistilGPT-2 model using the PEFT (Parameter-Efficient Fine-Tuning) 
 
 ### Model Evaluation & Testing
 The fine-tuned model was tested on unseen financial text data. Classification performance was assessed using accuracy, precision, recall, and F1-score. Text generating capability was evaluated based on perplexity.
+
+
+### Web Development
+A Flask web application was developed to serve the model through a user-friendly interface.
+
+
 
 ## Data Sources
 
