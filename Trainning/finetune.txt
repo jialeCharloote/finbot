@@ -1,0 +1,32 @@
+Using GPU: Tesla V100-PCIE-16GB
+GPU Memory: 16.94 GB
+CUDA Version: 11.7
+PyTorch version: 2.0.1+cu117
+Using device: cuda
+{'title': ['Global Genome Editing Market to Grow Rapidly at a CAGR ~13% by 2032 | DelveInsight', 'Global Genome Editing Market to Grow Rapidly at a CAGR ~13% by 2032 | DelveInsight', 'Global Genome Editing Market to Grow Rapidly at a CAGR ~13% by 2032 | DelveInsight', 'Global Genome Editing Market to Grow Rapidly at a CAGR ~13% by 2032 | DelveInsight', 'Global Genome Editing Market to Grow Rapidly at a CAGR ~13% by 2032 | DelveInsight'], 'ticker': ['CRSP', 'TMO', 'EDIT', 'A', 'REGN'], 'description': ['The growing prevalence of genetic disorders is driving the demand for gene therapy and genome editing solutions. Advancements in technologies like CRISPR-Cas9, TALENs, and base editing have enhanced precision, efficiency, and affordability, making these innovations more accessible to researchers and healthcare professionals.', 'The growing prevalence of genetic disorders is driving the demand for gene therapy and genome editing solutions. Advancements in technologies like CRISPR-Cas9, TALENs, and base editing have enhanced precision, efficiency, and affordability, making these innovations more accessible to researchers and healthcare professionals.', 'The growing prevalence of genetic disorders is driving the demand for gene therapy and genome editing solutions. Advancements in technologies like CRISPR-Cas9, TALENs, and base editing have enhanced precision, efficiency, and affordability, making these innovations more accessible to researchers and healthcare professionals.', 'The growing prevalence of genetic disorders is driving the demand for gene therapy and genome editing solutions. Advancements in technologies like CRISPR-Cas9, TALENs, and base editing have enhanced precision, efficiency, and affordability, making these innovations more accessible to researchers and healthcare professionals.', 'The growing prevalence of genetic disorders is driving the demand for gene therapy and genome editing solutions. Advancements in technologies like CRISPR-Cas9, TALENs, and base editing have enhanced precision, efficiency, and affordability, making these innovations more accessible to researchers and healthcare professionals.'], 'sentiment': ['positive', 'positive', 'positive', 'positive', 'neutral'], 'sentiment_reasoning': ['CRISPR Therapeutics is a notable company operating in the genome editing market, indicating its involvement and potential in this growing field.', "Thermo Fisher Scientific Inc. is a key player in the genome editing market, showcasing the company's expertise and participation in this emerging technology.", "Editas Medicine is highlighted for its strategic shift to focus exclusively on in vivo gene editing, demonstrating the company's commitment to advancing next-generation gene-editing therapies.", "Agilent Technologies Inc.'s acquisition of BIOVECTRA, a leading CDMO, indicates the company's efforts to strengthen the production of genome-editing reagents, enzymes, and delivery systems to meet the increasing demand.", "Regeneron Pharmaceuticals Inc. is mentioned as one of the notable companies operating in the genome editing market, but no specific details about the company's involvement or performance are provided."]}
+Train set distribution: Counter({'Bullish': 7112, 'Neutral': 3804, 'Bearish': 1865})
+Test set distribution: Counter({'Bullish': 1778, 'Neutral': 951, 'Bearish': 467})
+[2025-03-14 03:32:48,470] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+{'loss': 2.2352, 'grad_norm': 0.8043476939201355, 'learning_rate': 3.909304143862393e-05, 'epoch': 0.63}
+{'eval_loss': 0.925088107585907, 'eval_runtime': 23.7472, 'eval_samples_per_second': 134.585, 'eval_steps_per_second': 67.292, 'epoch': 1.0}
+{'loss': 1.0169, 'grad_norm': 0.6369454860687256, 'learning_rate': 4.951704821628139e-05, 'epoch': 1.25}
+{'loss': 0.9363, 'grad_norm': 0.5724544525146484, 'learning_rate': 4.728986557761869e-05, 'epoch': 1.88}
+{'eval_loss': 0.8514460325241089, 'eval_runtime': 23.3962, 'eval_samples_per_second': 136.604, 'eval_steps_per_second': 68.302, 'epoch': 2.0}
+{'loss': 0.9006, 'grad_norm': 0.5183134078979492, 'learning_rate': 4.341097321472152e-05, 'epoch': 2.5}
+{'eval_loss': 0.8121806383132935, 'eval_runtime': 24.3263, 'eval_samples_per_second': 131.381, 'eval_steps_per_second': 65.69, 'epoch': 3.0}
+{'loss': 0.8773, 'grad_norm': 0.4480983316898346, 'learning_rate': 3.8167802391486285e-05, 'epoch': 3.13}
+{'loss': 0.8591, 'grad_norm': 2.8869428634643555, 'learning_rate': 3.1948879283829286e-05, 'epoch': 3.75}
+{'eval_loss': 0.79021817445755, 'eval_runtime': 23.5255, 'eval_samples_per_second': 135.853, 'eval_steps_per_second': 67.926, 'epoch': 4.0}
+{'loss': 0.8437, 'grad_norm': 0.46005934476852417, 'learning_rate': 2.5215034655193847e-05, 'epoch': 4.38}
+{'eval_loss': 0.7781566381454468, 'eval_runtime': 23.7657, 'eval_samples_per_second': 134.479, 'eval_steps_per_second': 67.24, 'epoch': 5.0}
+{'loss': 0.8386, 'grad_norm': 0.518774151802063, 'learning_rate': 1.8465255662585053e-05, 'epoch': 5.01}
+{'loss': 0.8276, 'grad_norm': 0.5128078460693359, 'learning_rate': 1.2199710221314142e-05, 'epoch': 5.63}
+{'eval_loss': 0.7716368436813354, 'eval_runtime': 23.4383, 'eval_samples_per_second': 136.358, 'eval_steps_per_second': 68.179, 'epoch': 6.0}
+{'loss': 0.8284, 'grad_norm': 0.5327578186988831, 'learning_rate': 6.882683873927015e-06, 'epoch': 6.26}
+{'loss': 0.8246, 'grad_norm': 0.6342077851295471, 'learning_rate': 2.908175592351478e-06, 'epoch': 6.88}
+{'eval_loss': 0.7694928050041199, 'eval_runtime': 23.7721, 'eval_samples_per_second': 134.443, 'eval_steps_per_second': 67.222, 'epoch': 7.0}
+{'loss': 0.8242, 'grad_norm': 0.4957122802734375, 'learning_rate': 5.707019116858836e-07, 'epoch': 7.51}
+{'eval_loss': 0.7690605521202087, 'eval_runtime': 23.5498, 'eval_samples_per_second': 135.712, 'eval_steps_per_second': 67.856, 'epoch': 8.0}
+{'train_runtime': 1574.2692, 'train_samples_per_second': 64.95, 'train_steps_per_second': 8.121, 'train_loss': 0.9744763141579562, 'epoch': 8.0}
+✅ Training completed. Successfully saved model
+✅ finetuned-ds.zip is available to download
