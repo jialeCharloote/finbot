@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+header h1 {
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+.input-form {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #1a73e8;
+    outline: none;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    width: 100%;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #0d62d0;
+}
+
+.results {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.results h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.spinner {
+    text-align: center;
+    font-size: 24px;
+    color: #1a73e8;
+    margin: 20px 0;
+}
+
+.spinner p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.sentiment-badge {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 200px;
+    border-radius: 50px;
+}
+
+.sentiment-badge.bullish {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.sentiment-badge.bearish {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.sentiment-badge.neutral {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.ticker-info {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.reasoning {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 4px solid #1a73e8;
+}
+
+.reasoning h3 {
+    color: #1a73e8;
+    margin-bottom: 10px;
+}

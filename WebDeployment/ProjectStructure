@@ -1,0 +1,11 @@
+financial-sentiment-bot/
+├── app.py
+├── .env
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       └── main.js
+└── templates/
+    └── index.html
+    

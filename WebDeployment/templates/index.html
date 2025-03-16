@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Sentiment Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Financial News Sentiment Analyzer</h1>
+            <p>Analyze the sentiment of financial news for any stock ticker</p>
+        </header>
+
+        <div class="input-form">
+            <div class="form-group">
+                <label for="ticker">Stock Ticker:</label>
+                <input type="text" id="ticker" name="ticker" placeholder="e.g., AAPL" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="title">News Title:</label>
+                <input type="text" id="title" name="title" placeholder="Enter news headline" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="description">News Description:</label>
+                <textarea id="description" name="description" placeholder="Enter news summary or details" required></textarea>
+            </div>
+            
+            <button id="analyze-btn" type="button">Analyze Sentiment</button>
+        </div>
+
+        <div class="results" id="results-container" style="display: none;">
+            <h2>Analysis Results</h2>
+            <div class="spinner" id="loading-spinner">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Analyzing...</p>
+            </div>
+            <div id="results-content" style="display: none;">
+                <div class="sentiment-badge" id="sentiment-badge">
+                    <span id="sentiment-text">-</span>
+                </div>
+                <div class="ticker-info">
+                    <p>Ticker: <span id="result-ticker">-</span></p>
+                </div>
+                <div class="reasoning">
+                    <h3>Reasoning:</h3>
+                    <p id="sentiment-reasoning">-</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
