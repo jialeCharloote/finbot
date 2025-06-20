@@ -6,8 +6,10 @@
 
 A Question-Answering bot for financial news sentiment analysis, using a fine-tuned language model to provide precise and context-aware market sentiment analysis.
 
-## Developers: Charlotte Zhou & Zhilin Zhu
+## Contributors
 
+- [Charlotte Zhou](https://github.com/jialeCharloote)
+- [Zhilin Zhu](https://github.com/zzhu345)
 
 ## Abstract
 
@@ -204,7 +206,3 @@ This project successfully fine-tuned DeepSeek-R1-Distill-Qwen-1.5B to enhance fi
 
 This project is licensed under the Apache 2.0 License.
 
-## Contributors
-
-- [Charlotte Zhou](https://github.com/jialeCharloote)
-- [Zhilin Zhu](https://github.com/zzhu345)
