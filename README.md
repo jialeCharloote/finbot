@@ -6,6 +6,9 @@
 
 A Question-Answering bot for financial news sentiment analysis, using a fine-tuned language model to provide precise and context-aware market sentiment analysis.
 
+## Developers: Charlotte Zhou & Zhilin Zhu
+
+
 ## Abstract
 
 This project aims to fine-tune a pre-trained LLM to enhance financial sentiment analysis on financial news, both in terms of classification and reasoning analysis. This work develops a Question-Answering (QA) bot capable of providing more precise and context-aware market sentiment analysis.
